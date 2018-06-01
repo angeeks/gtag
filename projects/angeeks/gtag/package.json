@@ -1,0 +1,9 @@
+{
+  "name": "@angeeks/gtag",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angeeks/globals": "0.0.3",
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  }
+}

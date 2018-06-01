@@ -1,27 +1,40 @@
 # Gtag
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+[![Build Status](https://travis-ci.org/angeeks/gtag.svg?branch=master)](https://travis-ci.org/angeeks/gtag)
+[![npm version](https://badge.fury.io/js/%40angeeks%2Fgtag.svg)](https://www.npmjs.com/package/@angeeks/gtag)
 
-## Development server
+Yet another gtag util with angular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# This got simpler install process
 
-## Code scaffolding
+```
+  npm i -P @angeeks/gtag
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+# in module
+import { GtagModule } from '@angeeks/gtag';
 
-## Build
+@NgModule({
+  imports: [
+    GtagModule
+  ],
+  providers: [
+    { provide: GtagID, useValue: 'UA-XXXXX-X' }
+  ]
+})
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# injection
+import { Gtag } from '@angeeks/gtag';
 
-## Running unit tests
+class SomeComponent {
+  constructor(private gtag: Gtag) {
+    gtag.event('some-component.triggered');
+  }
+}
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
 
-## Running end-to-end tests
+# More about gtag
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[Gtag](https://developers.google.com/gtagjs/reference/event)
