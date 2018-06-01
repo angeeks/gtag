@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 function mockWindow() {
   return {
+    Date() {},
     document: {
       head: {
         appendChild() {}
