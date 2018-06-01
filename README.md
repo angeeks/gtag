@@ -12,7 +12,7 @@ Yet another gtag util with angular.
 ```
 
 ```typescript
-# in module
+// module.ts
 import { GtagModule } from '@angeeks/gtag';
 
 @NgModule({
@@ -24,7 +24,7 @@ import { GtagModule } from '@angeeks/gtag';
   ]
 })
 
-# injection
+// component.ts
 import { Gtag } from '@angeeks/gtag';
 
 class SomeComponent {
