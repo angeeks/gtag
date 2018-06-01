@@ -11,7 +11,7 @@ Yet another gtag util with angular.
   npm i -P @angeeks/gtag
 ```
 
-```
+```typescript
 # in module
 import { GtagModule } from '@angeeks/gtag';
 
