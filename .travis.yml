@@ -8,6 +8,8 @@ install:
   - npm i
 script:
   - npx ng lint
+  - npx ng test @angeeks/gtag --watch=false
+  - npx ng build @angeeks/gtag --prod
   - npx ng test gtag --watch=false
   - npx ng build gtag --prod --base-href gtag
 cache:
