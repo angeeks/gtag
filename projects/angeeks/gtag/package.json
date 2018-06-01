@@ -1,6 +1,24 @@
 {
   "name": "@angeeks/gtag",
   "version": "0.0.1",
+  "description": "Angular plus gtag.js",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "gtag",
+    "google analytics"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeeks/gtag.git"
+  },
+  "homepage": "https://angeeks.github.io/gtag",
+  "bugs": {
+    "url": "https://github.com/angeeks/gtag/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "@angeeks/globals": "0.0.3",
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
